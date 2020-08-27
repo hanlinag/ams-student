@@ -26,7 +26,7 @@ For the students, they have to use android application which will allow them to 
 - Android 4.4 Kit Kat minimum
 
 # Daigrams 
-## Student app flowchart
+### Student app flowchart
 Student needs to register with the corresponding subjects he/she take and his information. If he/she has already registered, he can enter the account by using student number and password. After login, he can view the attendance percentage subject by subject and he can also view which day he attended by date. He can get the attendance by scanning the QR code generated from the class teacher. He can upload the medical leaves to the dean. He can also edit all of his information.
 
 
