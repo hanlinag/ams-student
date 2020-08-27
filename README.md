@@ -17,6 +17,13 @@ For the students, they have to use android application which will allow them to 
 - Scan QR code to get attendance
 - Logout
 
+## Project Setup
+- I used firebase for realtime database.
+- You'll need to add the dependencies according to the [Firebase documentation](https://firebase.google.com/docs/database/android/start?authuser=0)
+- Note that you need to create the project in Firebase in order to access the realtime database from there. 
+- Then link your firebse project to this source code in [Android Studio](https://developer.android.com/studio)
+- After it finishes building the project, you're good to go.
+
 ## Technologies Used
 1. Kotlin 
 2. Google Firebase for data storing and realtime database
@@ -71,8 +78,17 @@ This system is used [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Stan
 - Provide full specification and design details
 - Software implementable in C and Java
 
+
 We encrypt user passwords, QR code data, etc.
 
+# Screenshots
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss1.png?raw=true)
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss2.png?raw=true)
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss3.png?raw=true)
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss4.png?raw=true)
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss5.png?raw=true)
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss6.png?raw=true)
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss7.png?raw=true)
 
 # License
 [MIT License](LICENSE)
