@@ -2,7 +2,7 @@
 Android app for student for Attendance Management System project. 
 
 #### Teacher App
-Link [Teacher App Project  Repository](https://github.com/hanlinag/ams-teacher)
+Link: [Teacher App Repository](https://github.com/hanlinag/ams-teacher)
 
 # Introduction 
 This project is “Attendance Management System”. This system is provided for  three main parts (the dean, the teacher and the student) to do taking attendance, calculating the percentage of the attendance and receiving the medical leaves. In the dean panel, the dean can accept the student attendance record that the class teacher sent. The dean can also accept the medical leaves and the system can update the corresponding student attendance automatically. She can also inform the underrated students and other important information. In the teacher panel, the teacher can generate QR code for the appropriate class time and he/she can confirm the attendance from the student and then submit to the dean. In the student panel, the student can scan the generated QR code from the teacher to get their attendance. The student can also view their attendance percentage transparently and can take the medical leaves by uploading the medical letter and choosing the dates that they were absent. 
