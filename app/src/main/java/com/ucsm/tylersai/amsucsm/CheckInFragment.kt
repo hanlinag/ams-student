@@ -44,7 +44,7 @@ class CheckInFragment : Fragment(), OnMapReadyCallback {
     //private var btMyLocation: Button? = null
     private var mapViewBundle: Bundle? = null
 
-    private val MAP_VIEW_BUNDLE_KEY = "AIzaSyDX4_2g9Hg94drkYcD7u8daPN_h-U5Ipeo"
+    private val MAP_VIEW_BUNDLE_KEY = "ADD-YOUR-OWN-MAP-API-KEY-HERE"
 
     private var currentLocation: Location? = null
     private var fusedLocationProviderClient: FusedLocationProviderClient? = null
