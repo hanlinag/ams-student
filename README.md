@@ -83,17 +83,17 @@ We encrypt user passwords, QR code data, etc.
 
 # Screenshots
 ![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss1.png?raw=true)
-<hr>
+
 ![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss2.png?raw=true)
-<hr>
+
 ![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss3.png?raw=true)
-<hr>
+
 ![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss4.png?raw=true)
-<hr>
+
 ![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss5.png?raw=true)
-<hr>
+
 ![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss6.png?raw=true)
-<hr>
+
 ![alt text](https://github.com/hanlinag/ams-student/blob/master/images/ss7.png?raw=true)
 
 # License
