@@ -17,6 +17,15 @@ For the students, they have to use android application which will allow them to 
 - Scan QR code to get attendance
 - Logout
 
+## How we handle validation?
+What if the student is at his hostel and wanna cheat on his attendance?
+Well, we also considered for that case too. Here's how we did:
+- The application asks for the location of the student's phone. If his/her location is not in the range(10 m) of teacher app, it cannot scan the QR code. 
+- QRCode is encrypted. So, it cannot be scanned using third party apps. You will not get the information on the QRCode.
+- QRCode will be expired in 5 minutes. 
+- Attendance only counts if the subject teacher press the CONFIRM button. 
+
+
 ## Will it work for me?
 This project is not designed for general usecase. It is designed based on the manual system of [University of Computer Studies, Mandalay](https://www.ucsm.edu.mm). Author is a computer science student who's studying in there majoring in Knowledge Engineering. But you can change some code it work with yours. Hope this can help you in some way, as the reference.
 
