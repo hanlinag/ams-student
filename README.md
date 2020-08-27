@@ -65,11 +65,11 @@ Attendance Record Table
 
 # Encryption Algorithm
 This system is used [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) (Advanced Encryption Standard) algorithms. The features of AES are as follows −
-•	Symmetric key symmetric block cipher
-•	128-bit data, 128/192/256-bit keys
-•	Stronger and faster than Triple-DES
-•	Provide full specification and design details
-•	Software implementable in C and Java
+- Symmetric key symmetric block cipher
+- 128-bit data, 128/192/256-bit keys
+- Stronger and faster than Triple-DES
+- Provide full specification and design details
+- Software implementable in C and Java
 We encrypt user passwords, QR code data, etc.
 
 
