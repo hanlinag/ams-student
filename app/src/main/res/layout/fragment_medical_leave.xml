@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:padding="10dp"
+                android:id="@+id/fragment_medical_root_view"
+                tools:context=".MedicalLeaveFragment">
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="150dp"
+               android:src="@drawable/no_img_pic"
+               android:layout_marginTop="5dp"
+               android:elevation="4dp"
+               android:scaleType="centerCrop"
+               android:layout_centerHorizontal="true"
+               android:id="@+id/img_temp"
+               android:layout_below= "@+id/bt_upload_medical"
+    />
+
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Medical Leave"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:layout_centerHorizontal="true"
+              android:gravity="center_horizontal"
+              android:id="@+id/tv_title_medical"
+
+    />
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="You can upload your medical leave letter here"
+              android:gravity="center_horizontal"
+              android:id="@+id/tv_subtitle_medical"
+              android:layout_below="@+id/tv_title_medical"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_subtitle_medical"
+            android:layout_marginTop="10dp"
+            android:text="Upload"
+            android:textColor="#03A9F4"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/bt_upload_medical"
+
+    />
+
+
+
+
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="image file is pending to upload"
+              android:id="@+id/tv_file_name_medical"
+              android:layout_below="@+id/img_temp"
+              android:paddingTop="5dp"
+              android:textSize="11sp"
+              android:textStyle="italic"
+              android:layout_centerHorizontal="true"
+              android:gravity="center_horizontal"
+    />
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:weightSum="2"
+                  android:layout_below="@id/tv_file_name_medical"
+                  android:padding="10dp"
+    >
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Medical Leave Date"
+                  android:gravity="center_horizontal"
+                  android:textStyle="bold"
+        />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:weightSum="2"
+        >
+
+
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:padding="5dp"
+                    android:id="@+id/bt_date_picker1"
+                    android:layout_weight="1"
+            />
+
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/bt_date_picker2"
+            />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:weightSum="2"
+        >
+
+
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:padding="5dp"
+                    android:id="@+id/bt_date_picker3"
+                    android:layout_weight="1"
+            />
+
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/bt_date_picker4"
+            />
+        </LinearLayout>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:padding="5dp"
+                android:id="@+id/bt_date_picker5"
+        />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatCheckBox android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@id/medical_bt_submit"
+              android:text="I agree to terms and conditions relating to attendance."
+              android:textStyle="italic"
+              android:textSize="11sp"
+                                                 android:paddingBottom="5dp"
+                                                 android:id="@+id/term_checkbox"
+                                                 android:textColor="#4D4C4C"
+    />
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/medical_bt_submit"
+            android:text="Submit"
+
+    />
+
+
+
+</RelativeLayout>

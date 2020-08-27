@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/my_acc_root_view"
+        tools:context=".SubjectDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:id="@+id/customized_app_bar_layout"
+                                                     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                                                     android:fitsSystemWindows="true"
+    >
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent"
+                                                                    android:layout_height="280dp"
+                                                                    android:id="@+id/collasping_toolbar"
+                                                                    android:fitsSystemWindows="true"
+                                                                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                                                                    app:contentScrim="@color/colorPrimary"
+                                                                    app:expandedTitleTextAppearance="@android:color/transparent"
+        >
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+            >
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:src="@drawable/subject_detail_bg"
+
+                />
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_centerInParent="true"
+                  android:layout_centerHorizontal="true"
+                  android:gravity="center_vertical"
+    >
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="Android Programming"
+                  android:id="@+id/detail_subject_name"
+                  android:textStyle="bold"
+                  android:textSize="18sp"
+                  android:gravity="center"
+                  android:textColor="#FFFFFF"
+                />
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_subject_percent"
+                android:textSize="16sp"
+                android:paddingTop="5dp"
+                android:textColor="#FFF"
+                android:textStyle="normal"
+                android:layout_gravity="center_horizontal"
+                android:text="0% of 100% of this semester"
+
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_subject_monthly_percent"
+                android:textSize="12sp"
+                android:paddingTop="5dp"
+                android:textColor="#FFF"
+                android:textStyle="normal"
+                android:layout_gravity="center_horizontal"
+                android:text="89% of 100% of July"
+
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+            <androidx.appcompat.widget.Toolbar android:layout_width="match_parent"
+                                               android:layout_height="?attr/actionBarSize"
+                                               android:id="@+id/subject_detail_customized_toolbar"
+                                               app:layout_collapseMode="pin"
+                                               app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            >
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:id="@+id/nested_scroll_view"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+            <view class="androidx.appcompat.app.AlertController$RecycleListView"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/subject_detail_daily_list"
+                  android:divider="#000"
+                  android:nestedScrollingEnabled="true"
+                  android:dividerHeight="1dp"
+                  android:footerDividersEnabled="false"
+                  android:headerDividersEnabled="false"
+            />
+
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

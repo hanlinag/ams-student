@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:orientation="vertical"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="110dp"
+                                   android:padding="10dp"
+                                   android:layout_margin="5dp"
+                                   app:cardCornerRadius="10dp"
+                                   android:elevation="5dp"
+>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+    >
+
+
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentLeft="true"
+    >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="4002"
+                  android:textSize="18sp"
+                  android:textStyle="bold"
+                  android:id="@+id/subject_code_tv"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="English"
+                  android:id="@+id/subject_title_detail_tv"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="70% of 100%"
+                  android:id="@+id/subject_percent"
+                  android:textSize="10sp"
+        />
+
+    </LinearLayout>
+
+    <lecho.lib.hellocharts.view.PieChartView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/subject_pie_chart"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+    />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

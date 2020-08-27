@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/action_noti"
+    android:id="@+id/action_noti"
+    android:orderInCategory="100"
+    app:showAsAction="always"
+    android:icon="@drawable/ic_menu_noti"/>
+
+
+    <item android:id="@+id/action_my_acc"
+          android:title="@string/action_my_acc"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/action_about"
+          android:title="@string/action_about"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+
+</menu>

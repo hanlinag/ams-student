@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+>
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_info"
+               android:layout_gravity="center_vertical"
+               android:padding="5dp"
+               android:layout_centerVertical="true"
+               android:layout_alignParentLeft="true"
+    />
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+                  android:padding="5dp"
+    >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Warning"
+                  android:id="@+id/noti_title"
+                  android:textSize="14sp"
+                  android:textStyle="bold"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/noti_body"
+                  android:maxLength="50"
+                  android:text="Your roll call is underrated. Attend your class regularly"
+                  android:textSize="12sp"
+        />
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/noti_date"
+              android:text="10/7/2019"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_gravity="center_vertical"
+              android:textSize="10sp"
+
+    />
+</RelativeLayout>

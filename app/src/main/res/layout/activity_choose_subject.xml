@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_login_root_view"
+        tools:context=".ChooseSubjectActivity">
+
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/side_nav_bar"
+                   android:layout_alignParentTop="true"
+                   android:contentDescription="TODO"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/logo_tran_img"
+                  android:layout_centerHorizontal="true"
+                  android:id="@+id/login_welcome_text_view"
+                  android:textStyle="bold"
+                  android:paddingTop="20dp"
+                  android:textSize="23sp"
+                  android:text="Select The Subject"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/login_welcome_text_view"
+                  android:layout_centerHorizontal="true"
+                  android:id="@+id/login_subtitle"
+                  android:paddingTop="10dp"
+                  android:layout_marginLeft="5dp"
+                  android:gravity="center"
+                  android:layout_marginRight="5dp"
+                  android:text="The eligible subjects that you can learn in this semester"
+        />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:paddingTop="30dp"
+                      android:paddingRight="15dp"
+                      android:paddingLeft="15dp"
+                      android:paddingBottom="10dp"
+                      android:layout_margin="5dp"
+                      android:layout_centerInParent="true"
+                      android:gravity="center"
+                      android:layout_centerVertical="true"
+                      android:layout_below="@+id/login_subtitle"
+        >
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="E-4002: English"
+                        android:id="@+id/englishc"
+                />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="J-1002: Japanese"
+                    android:id="@+id/japanesec"
+            />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aac"
+                    android:text="CS-4012: Algorithm and Complexity II"
+            />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/securityc"
+                    android:text="CS-4022: Information Assurance and Security"
+            />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plc"
+                    android:text="CS-4032: Programming Language"
+            />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CS-4042: Project"
+                    android:id="@+id/projectc"
+            />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CST-4112: Android Programming"
+                    android:id="@+id/androidc"
+            />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CS-KE-4052: Advanced Intelligent System"
+                    android:id="@+id/kemajorc"
+            />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CS-SE-4052: Software Process"
+                    android:id="@+id/semajorc"
+            />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CS-HPC-4052: Performance Computing II"
+                    android:id="@+id/hpcmajorc"
+            />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CS-BIS-4052: Business Model"
+                    android:id="@+id/bismajorc"
+            />
+
+        </LinearLayout>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/choosemsub_bt_continue"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentBottom="true"
+                android:textColor="#000"
+                android:text="Continue"
+        />
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.Toolbar android:layout_width="match_parent"
+                                       android:layout_height="?attr/actionBarSize"
+                                       android:id="@+id/choosesubject_customized_toolbar"
+                                       app:layout_collapseMode="none"
+                                       app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    >
+
+    </androidx.appcompat.widget.Toolbar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

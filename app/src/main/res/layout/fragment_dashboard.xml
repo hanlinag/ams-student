@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipToPadding="false"
+             tools:context=".DashboardFragment">
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+    >
+
+        <RelativeLayout android:layout_width="match_parent"
+                      android:layout_height="220dp"
+                      android:background="@drawable/dashboard_background"
+                        android:id="@+id/dashboard_top_design"
+                        android:layout_alignParentTop="true"
+        >
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text=" Attendance Progress"
+                      android:textColor="#FFF"
+                      android:layout_centerHorizontal="true"
+                      android:gravity="center_horizontal"
+                      android:paddingTop="10dp"
+                      android:layout_alignParentTop="true"
+            />
+
+            <ImageView android:layout_width="90dp"
+                       android:layout_height="90dp"
+                       android:layout_marginTop="10dp"
+                       android:src="@drawable/ucsm"
+                       android:layout_centerHorizontal="true"
+                       android:layout_centerInParent="true"
+            />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="9 July 2019"
+                      android:id="@+id/today_date_tv"
+                      android:layout_centerHorizontal="true"
+                      android:textStyle="bold"
+                      android:textColor="#E2D9D9"
+                      android:textSize="23sp"
+                      android:layout_alignParentBottom="true"
+                      android:layout_marginBottom="10dp"
+            />
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/dashboard_top_design"
+                android:id="@+id/recycler_view_dashboard"
+                android:elevation="5dp"
+
+        />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

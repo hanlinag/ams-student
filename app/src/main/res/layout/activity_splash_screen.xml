@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SplashScreenActivity">
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/splash_bg"
+    />
+
+
+        <ImageView android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:src="@drawable/logotran"
+                   android:layout_above="@+id/tv_title_splash"
+                   android:layout_centerHorizontal="true"
+                   android:id="@+id/splash_img"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Attendance System (Student)"
+                  android:id="@+id/tv_title_splash"
+                  android:gravity="center_horizontal"
+                  android:layout_centerVertical="true"
+                  android:layout_centerHorizontal="true"
+                  android:textColor="#FFF"
+                  android:textSize="18sp"
+
+        />
+
+        <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:max="100"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_title_splash"
+                android:indeterminate="true"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+        />
+
+</RelativeLayout>
