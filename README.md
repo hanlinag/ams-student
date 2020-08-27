@@ -70,6 +70,7 @@ This system is used [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Stan
 - Stronger and faster than Triple-DES
 - Provide full specification and design details
 - Software implementable in C and Java
+
 We encrypt user passwords, QR code data, etc.
 
 
