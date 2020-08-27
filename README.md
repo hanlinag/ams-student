@@ -28,7 +28,40 @@ For the students, they have to use android application which will allow them to 
 # Daigrams 
 ### Student app flowchart
 Student needs to register with the corresponding subjects he/she take and his information. If he/she has already registered, he can enter the account by using student number and password. After login, he can view the attendance percentage subject by subject and he can also view which day he attended by date. He can get the attendance by scanning the QR code generated from the class teacher. He can upload the medical leaves to the dean. He can also edit all of his information.
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/studflowchart.png?raw=true)
 
+### Sequence Diagram
+The processes of the system describe that the teacher generates the QR code to take the attendance and the students scan this QR code to get attendance. The teacher checks the attendance data and sends to the dean by submitting the data. The student can view the attendance record and upload the medical leaves. Then the dean accepts the medical leaves and the attendance percentage will be updated. The dean manages the subjects and generates records. 
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/sequence.png?raw=true)
+
+### Usecase Diagram
+Student can update his/her information and password, view his/her attendance percentage, upload medical leave letters and scan QR code to get attendance. The teachers can generate QR code for the students to take the attendance and then check the attendance information and submit the attendance record to dean. The dean can notify underrated attendance students, accept medical leave letters and update corresponding student attendance, manage all information about the subjects, students and teachers. The dean can also generate student attendance record with CSV file.
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/usecase.png?raw=true)
+
+### Database Design
+Overall Design
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/overalldb.png?raw=true)
+
+Subject Table
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/subject.png?raw=true)
+
+Student Table
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/student.png?raw=true)
+
+Pre-Student Table (who haven't registered yet.)
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/pre-students.png?raw=true)
+
+Pending Attendance Table (Wait for the subject teacher to confirm the attendance.)
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/pending%20attendance.png?raw=true)
+
+Medical Leave Table
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/medical%20leave.png?raw=true)
+
+Class Table
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/class.png?raw=true)
+
+Attendance Record Table
+![alt text](https://github.com/hanlinag/ams-student/blob/master/images/addtendance.png?raw=true)
 
 # License
 [MIT License](LICENSE)
