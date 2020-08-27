@@ -18,7 +18,7 @@ For the students, they have to use android application which will allow them to 
 - Logout
 
 ## Will it work for me?
-This project is not designed for general usecase. It is designed based on the manual system of [University of Computer Studies, Mandalay](www.ucsm.edu.mm). Author is a computer science student who's studying in there majoring in Knowledge Engineering. But you can change some code it work with yours. Hope this can help you in some way, as the reference.
+This project is not designed for general usecase. It is designed based on the manual system of [University of Computer Studies, Mandalay](https://www.ucsm.edu.mm). Author is a computer science student who's studying in there majoring in Knowledge Engineering. But you can change some code it work with yours. Hope this can help you in some way, as the reference.
 
 ## Project Setup
 - I used firebase for realtime database.
